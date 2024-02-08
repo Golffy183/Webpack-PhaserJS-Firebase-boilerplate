@@ -1,0 +1,70 @@
+{
+  "name": "phaser-project-template",
+  "private": true,
+  "version": "3.55.2",
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "MIT",
+  "description": "Webpack-PhaserJS-Firebase-boilerplate with TypeScript",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack serve --config webpack/webpack.dev.js --hot",
+    "build": "rimraf dist && webpack --config webpack/webpack.prod.js",
+    "serve": "serve dist",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint": "pnpm lint:format && pnpm lint:fix",
+    "FBStart": "http-server -S -C cert.pem"
+  },
+  "keywords": [
+    "Phaser",
+    "Phaser 3",
+    "Phaser3",
+    "html5 game",
+    "TypeScript",
+    "webpack",
+    "starter",
+    "boilerplate",
+    "Firebase"
+  ],
+  "dependencies": {
+    "firebase": "^10.8.0",
+    "phaser": "^3.70.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "@yandeu/prettier-config": "^0.0.3",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.10.0",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-check-file": "^2.6.2",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "javascript-obfuscator": "^4.1.0",
+    "node": "^21.6.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^3.0.2",
+    "serve": "^13.0.4",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0",
+    "webpack-obfuscator": "^3.5.1",
+    "workbox-precaching": "^7.0.0",
+    "workbox-webpack-plugin": "^6.6.0"
+  }
+}

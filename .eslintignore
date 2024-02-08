@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+*.local
+node_modules/*
+
+lib/
+analytics/*
+.secret/*
+
+todo-list.md
+
+webpack/*
+pwa/*
